@@ -1,0 +1,495 @@
+
+
+/* Google font by Z */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Anatolian+Hieroglyphs&display=swap');
+
+/* ////////////////////////////////////////// Yuma  //////////////////////////////////////////*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.yuma{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* ================= button   =================*/
+div.button-container {
+    margin:  50px;
+    
+    }
+    
+    /* set color  */
+     .button-primary {
+        background-color:  #4C9AFF;
+        color: white;
+        border: #4C9AFF;
+    }
+    
+    
+    .button-secondary {
+        background-color: #3C7BCC;
+        color: white;
+    }
+    
+    .button-tertiary {
+        background-color: #3E5C56;
+        color: white;
+    }
+    
+    /* ========= set width  ===========*/
+    /* width of small is  */
+    .small {
+        width: 95px;
+    }
+    
+    /* width of medium is 180 but padding each side is 12 */
+    .medium {
+        width: 192px;  
+    }
+    
+    .large {
+        width: 386px;
+    }
+    button {
+        height: 42px;
+        border: none;
+        border-radius: 5px;
+        text-align: center;
+    }
+    
+    /* outline*/
+    button.outline.button-primary {
+        background-color: white;
+        color: #4C9AFF;
+        border: 1px solid #4C9AFF;
+    }
+    
+    button.outline.button-secondary {
+        background-color: white;
+        color: #3C7BCC;
+        border: 1px solid #3C7BCC;
+    }
+    
+    button.outline.button-tertiary {
+        background-color: white;
+        color: #3E5C56;
+        border: 1px solid #3E5C56;
+    }
+    
+    /* ================= Text field   =================*/
+    
+    .input-bx{
+        position: relative;
+        width: 300px;
+    }
+    .input-bx input{
+        width: 100%;
+        padding: 10px;
+        border: 2px solid black;
+        border-radius: 5px;
+        outline: none;
+        font-size: 1rem;
+        transition: 0.6s;
+    }
+    
+    .input-bx span{
+        position: absolute;
+        left: 0;
+        padding: 10px;
+        font-size: 1rem;
+        color: #7f8fa6;
+    
+        pointer-events: none;
+        transition: 0.6s;
+    }
+    .input-bx input:valid ~ span,
+    .input-bx input:focus ~ span{
+        color: #3C7BCC;
+        transform: translateX(10px) translateY(-9px);
+        font-size: 0.65rem;
+        font-weight: 600;
+        padding: 0 10px;
+        background: #fff;
+        letter-spacing: 0.1rem;
+    }
+    
+    .input-bx input:valid,
+    .input-bx input:focus{
+        color: #3C7BCC;;
+        border: 2px solid #3C7BCC;;
+    
+    }
+    
+    /* ===================== Calendar  =====================*/
+    .c {
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+        justify-content: center; 
+         min-height: 100vh; 
+     
+      }
+      .wrapper{
+        width: 380px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+      }
+      .wrapper header{
+        display: flex;
+        align-items: center;
+        padding: 25px 30px 10px;
+        justify-content: space-between;
+      }
+      header .icons{
+        display: flex;
+      }
+      header .icons span{
+        height: 38px;
+        width: 38px;
+        margin: 0 1px;
+        cursor: pointer;
+        color: #878787;
+        text-align: center;
+        line-height: 38px;
+        font-size: 1.9rem;
+        user-select: none;
+        border-radius: 50%;
+      }
+      .icons span:last-child{
+        margin-right: -10px;
+      }
+      header .icons span:hover{
+        background: #f2f2f2;
+      }
+      header .current-date{
+        font-size: 1.45rem;
+        font-weight: 500;
+      }
+      .calendar{
+        padding: 20px;
+      }
+      .calendar ul{
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        text-align: center;
+      }
+      .calendar .days{
+        margin-bottom: 20px;
+      }
+      .calendar li{
+        color: #333;
+        width: calc(100% / 7);
+        font-size: 1.07rem;
+      }
+      .calendar .weeks li{
+        font-weight: 500;
+        cursor: default;
+      }
+      .calendar .days li{
+        z-index: 1;
+        cursor: pointer;
+        position: relative;
+        margin-top: 30px;
+      }
+      .days li.inactive{
+        color: #aaa;
+      }
+      .days li.active{
+        color: #fff;
+      }
+      .days li::before{
+        position: absolute;
+        content: "";
+        left: 50%;
+        top: 50%;
+        height: 40px;
+        width: 40px;
+        z-index: -1;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .days li.active::before{
+        background: #4C9AFF;
+      }
+      .days li:not(.active):hover::before{
+        background: #4C9AFF;
+      }
+
+
+
+
+
+
+
+
+
+/* ////////////////////////////////////////// Rojeth  //////////////////////////////////////////*/
+
+
+
+
+body {
+    margin: 0px;
+    font-family: 'Noto Sans Anatolian Hieroglyphs', sans-serif;
+    background-color: #F7F8F8;
+}
+
+
+.navbar-top {
+    height: 70px;
+    background-color: #4C9AFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 20px;
+    
+}
+
+.dropdown {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.dropdown .ham-btn {
+    display: flex;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    cursor: pointer;
+
+}
+
+.dropdown .search-btn {
+    display: flex;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-right: 20px;
+    /* padding: 15px; */
+}
+
+.sidebar {
+    background-color: #587DBD;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    position: absolute;
+    
+}
+
+.nav-ul{
+    display: flex ;
+    flex-direction: column;
+    padding: 0px;
+    list-style: none;
+
+}
+
+.sidebar .list-each-link:hover{
+    list-style: none;
+    background-color: white;
+
+}
+
+.list-each-link a {
+    text-decoration: none;
+    text-align: right;
+    display: flex;
+    justify-content: left;
+    align-items: right;
+    padding: 25px;
+    padding-left: 50px;
+    height: 100%;
+    color: white;
+    font-size: large;
+
+}
+
+.list-each-link {
+
+
+    display: flex;
+    justify-content: space-between;
+    padding-right: 50px;
+}
+
+.list-each-link button {
+    border: none;
+    outline: none;
+    background-color: inherit;
+}
+
+
+.sidebar.active {
+    opacity: 1;
+    pointer-events: all;
+   
+}
+
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 585px; /* Full height (cover the whole page) */
+    top: 0;
+    right: 50;
+    /* filter: blur(8px); Black background with opacity */
+    /* -webkit-filter: blur(8px); */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+
+  }
+
+.drp-2 {
+    display: flex;
+    text-align: center;
+    padding: 0px;
+
+}
+
+.top-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.close-btn {
+    outline: none;
+    border: none;
+    background-color: inherit;
+    display: flex;
+    margin-right: 50px;
+    margin-top: 25px;
+
+    
+}
+
+.sidebar-logo {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    margin-left: 50px;
+}
+
+
+
+/* ============================================== Start<<  👱🏼‍♂️Bunthai🇰🇭  >>============================================== */
+
+/* <<<<<<<<<<<<service header>>>>>>>>>>>>>>>>> */
+.service-title-B{
+  margin-top: 20px;
+  text-align: center;
+}
+.service-title-B .service-B{
+  font-size: 14px;
+  color: #264d7f;
+  padding: 5px 30px;
+  background-color:#EBEDEF;
+  font-weight: bold;
+  border-radius: 5px;
+  width: 150px;
+  margin: auto;
+}
+.service-title-B h2{
+  font-size: 32px;
+  color: #264D7F;
+}
+.service-title-B h2 span{
+  color: #4C9AFF;
+}
+/* <<<<<<<<<<<<end of service header>>>>>>>>>>>>>>> */
+
+/* <<<<<<<<<<<<card service info>>>>>>>>>>>>>>>>> */
+.container-B{
+  width: 374px;
+  height: auto;
+  background-color: #FFFFFF;
+  margin: 20px auto;
+}
+.container-B .card-info-B .img-B{
+  width: 100%;
+  height: 100%;
+}
+.container-B .card-info-B .img-B img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+.Descrip-B{
+  margin-top: 10px;
+  padding-left: 15px;
+}
+.Descrip-B h3{
+  margin-bottom: 10px;
+}
+
+/* start packgae */
+.container-pack-B{
+  width: 244px;
+  height: 305px;
+  margin:20px auto;
+  border: 1px solid #93C2FF;
+  border-radius: 5px;
+  /* background-color: blue; */
+}
+.content-B img{
+  width: 114px;
+  height: 44px;
+  margin: 10px 0;
+}
+.container-pack-B .title-B{
+  padding-bottom: 10px;
+  text-align: center;
+  background-color: #93C2FF;
+  border-radius: 2px 2px 0 0;
+}
+.container-pack-B .content-B{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cont-des-B{
+  margin-top: 10px;
+}
+.package-content{
+  text-align: center;
+  padding-bottom: 10px ;
+}
+.dashline{
+  width: 192px;
+  height: 0.5px;
+  border: 1px dashed #264D7F;
+  margin-bottom: 10px;
+}
+.package-button{
+  width: 212px;
+  height: 30px;
+  margin-top: 10px;
+}
+.package-1{
+  margin-top: 40px;
+}
+.package-1-m{
+  margin-top: 23px;
+}
+
+/* ============================================== End<<  👱🏼‍♂️Bunthai🇰🇭  >>============================================== */
